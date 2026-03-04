@@ -40,6 +40,7 @@
                                         ↓
                               实时 WebSocket 推送到前端
 ```
+![alt text](./docs/kit/images/image.png)
 
 ## 🚀 快速开始
 
@@ -122,19 +123,15 @@ npm run -w backend cdk destroy -- --all
 
 本项目选择 multi-agent-orchestrator 是因为它原生支持 Supervisor 和 Chain 编排模式，正好匹配多Agent协作定价的业务场景。
 
-### 后续开发计划
+更多问题请参考 [FAQ.md](./FAQ.md)
+
+## 后续开发计划
 
 我们计划开发基于 Strands Agents SDK 的版本：
 - [ ] 支持多模型提供商切换（OpenAI、Anthropic、Gemini）
 - [ ] 统一的 Tool 定义接口
 - [ ] 本地开发调试支持
 
-更多问题请参考 [FAQ.md](./FAQ.md)
-
 ## 📄 License
 
 [Apache License 2.0](LICENSE)
-
----
-
-> 💡 详细的面试准备材料请参考 [INTERVIEW_PREP.md](./INTERVIEW_PREP.md)
