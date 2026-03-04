@@ -1,0 +1,25 @@
+type Pricing @model @auth(rules: [{ allow: owner, ownerField: "userId", identityClaim: "sub" }]) {
+    id: ID!
+    userId: ID! @index(name: "byUserId", queryField: "pricingByUserId")
+    product: AWSJSON
+    demandForecast: AWSJSON
+    webScrap: AWSJSON
+    marginAnalysis: AWSJSON
+    botResponses: AWSJSON
+    status: String
+}
+
+# filter subscription updates based on user ID
+# https://docs.amplify.aws/gen1/react/build-a-backend/graphqlapi/subscribe-data/#create-a-custom-graphql-subscription-by-id
+type Subscription {
+    onPricingById(id: ID!): Pricing
+        @aws_subscribe(mutations: ["updatePricing"])
+        @auth(rules: [{ allow: private }])
+}
+
+# lambda resolver mutation
+type Mutation {
+    resolverLambda(args: String): String
+        @function(name: "resolverLambda")
+        @auth(rules: [{ allow: private }])
+}

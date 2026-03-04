@@ -1,0 +1,173 @@
+{
+    "competitor_data": [
+        {
+            "competitor_name": "ToolMaster",
+            "competitor_url": "/competitor/tool-master",
+            "product_match": {
+                "model": "SAW-PRO-001",
+                "match_confidence": 98,
+                "specifications_match": 95
+            },
+            "price_data": {
+                "regular_price": 299.99,
+                "current_price": 279.99,
+                "promotion_type": "Holiday Sale",
+                "promotion_end_date": "2025-12-31",
+                "stock_status": "In Stock",
+                "shipping_cost": 0.0,
+                "rating": 4.7,
+                "review_count": 528
+            },
+            "market_position": "Premium",
+            "last_updated": "2025-04-15T10:30:00Z"
+        },
+        {
+            "competitor_name": "ToolMaster",
+            "competitor_url": "/competitor/tool-master",
+            "product_match": {
+                "model": "SAW-PRO-002",
+                "match_confidence": 96,
+                "specifications_match": 94
+            },
+            "price_data": {
+                "regular_price": 309.99,
+                "current_price": 309.99,
+                "promotion_type": "None",
+                "promotion_end_date": null,
+                "stock_status": "Low Stock",
+                "shipping_cost": 12.99,
+                "rating": 4.8,
+                "review_count": 342
+            },
+            "market_position": "Premium",
+            "last_updated": "2024-12-15T11:45:00Z"
+        },
+        {
+            "competitor_name": "Builders Depot",
+            "competitor_url": "/competitor/builders-depot",
+            "product_match": {
+                "model": "SAW-CON-002",
+                "match_confidence": 94,
+                "specifications_match": 92
+            },
+            "price_data": {
+                "regular_price": 249.99,
+                "current_price": 219.99,
+                "promotion_type": "Clearance",
+                "promotion_end_date": "2025-12-25",
+                "stock_status": "In Stock",
+                "shipping_cost": 0.0,
+                "rating": 4.5,
+                "review_count": 876
+            },
+            "market_position": "Competitive",
+            "last_updated": "2023-12-15T09:15:00Z"
+        },
+        {
+            "competitor_name": "Builders Depot",
+            "competitor_url": "/competitor/builders-depot",
+            "product_match": {
+                "model": "SAW-CON-003",
+                "match_confidence": 92,
+                "specifications_match": 90
+            },
+            "price_data": {
+                "regular_price": 239.99,
+                "current_price": 229.99,
+                "promotion_type": "Weekend Special",
+                "promotion_end_date": "2025-12-18",
+                "stock_status": "In Stock",
+                "shipping_cost": 9.99,
+                "rating": 4.6,
+                "review_count": 654
+            },
+            "market_position": "Competitive",
+            "last_updated": "2024-12-15T12:00:00Z"
+        },
+        {
+            "competitor_name": "ToolMaster",
+            "competitor_url": "/competitor/tool-master",
+            "product_match": {
+                "model": "SAW-DIY-003",
+                "match_confidence": 96,
+                "specifications_match": 93
+            },
+            "price_data": {
+                "regular_price": 179.99,
+                "current_price": 159.99,
+                "promotion_type": "Holiday Bundle",
+                "promotion_end_date": "2025-12-31",
+                "stock_status": "In Stock",
+                "shipping_cost": 0.0,
+                "rating": 4.4,
+                "review_count": 1243
+            },
+            "market_position": "Value",
+            "last_updated": "2025-03-15T10:00:00Z"
+        },
+        {
+            "competitor_name": "ToolMaster",
+            "competitor_url": "/competitor/tool-master",
+            "product_match": {
+                "model": "SAW-DIY-004",
+                "match_confidence": 90,
+                "specifications_match": 89
+            },
+            "price_data": {
+                "regular_price": 189.99,
+                "current_price": 169.99,
+                "promotion_type": "Christmas Sale",
+                "promotion_end_date": "2023-12-24",
+                "stock_status": "In Stock",
+                "shipping_cost": 5.99,
+                "rating": 4.3,
+                "review_count": 892
+            },
+            "market_position": "Value",
+            "last_updated": "2023-12-15T11:30:00Z"
+        }
+    ],
+    "market_metrics": {
+        "average_market_price": {
+            "premium_tier": 304.99,
+            "competitive_tier": 244.99,
+            "value_tier": 184.99
+        },
+        "price_range": {
+            "premium_tier": {
+                "min": 279.99,
+                "max": 309.99
+            },
+            "competitive_tier": {
+                "min": 219.99,
+                "max": 249.99
+            },
+            "value_tier": {
+                "min": 159.99,
+                "max": 189.99
+            }
+        },
+        "dominant_price_point": {
+            "premium_tier": 299.99,
+            "competitive_tier": 239.99,
+            "value_tier": 179.99
+        },
+        "price_clustering": [
+            {
+                "cluster_range": "275-325",
+                "competitor_count": 2,
+                "tier": "Premium"
+            },
+            {
+                "cluster_range": "215-250",
+                "competitor_count": 2,
+                "tier": "Competitive"
+            },
+            {
+                "cluster_range": "150-190",
+                "competitor_count": 2,
+                "tier": "Value"
+            }
+        ]
+    }
+}

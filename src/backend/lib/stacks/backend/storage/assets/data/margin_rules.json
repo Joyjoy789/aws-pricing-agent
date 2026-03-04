@@ -1,0 +1,65 @@
+{
+    "margin_rules": {
+        "role_based_margins": {
+            "best": {
+                "target_margin": 45,
+                "minimum_margin": 40,
+                "maximum_margin": 55,
+                "promotional_floor": 35,
+                "volume_discount_max": 10
+            },
+            "better": {
+                "target_margin": 40,
+                "minimum_margin": 35,
+                "maximum_margin": 50,
+                "promotional_floor": 30,
+                "volume_discount_max": 12
+            },
+            "good": {
+                "target_margin": 35,
+                "minimum_margin": 30,
+                "maximum_margin": 45,
+                "promotional_floor": 25,
+                "volume_discount_max": 15
+            },
+            "entry": {
+                "target_margin": 30,
+                "minimum_margin": 25,
+                "maximum_margin": 40,
+                "promotional_floor": 20,
+                "volume_discount_max": 18
+            }
+        },
+        "battery_voltage_adjustments": {
+            "60V MAX": "+5%",
+            "40V MAX": "+3%",
+            "20V MAX": "+0%",
+            "20V": "-2%"
+        },
+        "feature_based_adjustments": {
+            "premium_features": {
+                "Metal blade guard": "+2%",
+                "Premium carry case": "+1.5%"
+            },
+            "standard_features": {
+                "LED work light": "+0.5%",
+                "Electric brake": "+1%"
+            }
+        },
+        "volume_pricing_tiers": {
+            "high_volume": {
+                "threshold": 40000,
+                "margin_adjustment": "-3%"
+            },
+            "medium_volume": {
+                "threshold": 30000,
+                "margin_adjustment": "-1.5%"
+            }
+        },
+        "seasonal_adjustments": {
+            "peak_season": "+2%",
+            "off_season": "-2%",
+            "holiday_season": "dynamic_based_on_demand"
+        }
+    }
+}

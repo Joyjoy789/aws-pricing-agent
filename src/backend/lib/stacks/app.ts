@@ -1,0 +1,45 @@
+import { StackProps } from "aws-cdk-lib";
+import { Construct } from "constructs";
+import { FrontendDeployStack, FrontendStack } from "./frontend";
+import { BackendStack } from "./backend";
+import { NagSuppressions } from "cdk-nag";
+import { LabsStack } from "../common/constructs/stack";
+
+export class AppStack extends LabsStack {
+    constructor(scope: Construct, id: string, props: StackProps) {
+        super(scope, id, props);
+
+        const frontendStack = new FrontendStack(this, "frontend");
+        const backendStack = new BackendStack(this, "backend", {
+            urls: frontendStack.urls,
+        });
+        // this stack must be named frontendDeploy
+        new FrontendDeployStack(this, "frontendDeploy", {
+            websiteBucket: frontendStack.websiteBucket,
+            distribution: frontendStack.distribution,
+            environmentVariables: backendStack.environmentVariables,
+        });
+
+        NagSuppressions.addResourceSuppressions(
+            this,
+            [
+                {
+                    id: "AwsSolutions-IAM4",
+                    reason: "Lambda functions require the AWSLambdaBasicExecutionRole to write logs to CloudWatch.",
+                    appliesTo: [
+                        "Policy::arn:<AWS::Partition>:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+                    ],
+                },
+                {
+                    id: "AwsSolutions-IAM5",
+                    reason: "High-level constructs require wildcards for dynamic resource creation and management.",
+                },
+                {
+                    id: "AwsSolutions-L1",
+                    reason: "High-level constructs set their own runtimes.",
+                },
+            ],
+            true
+        );
+    }
+}

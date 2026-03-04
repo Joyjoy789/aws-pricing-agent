@@ -1,0 +1,98 @@
+[
+    {
+        "product_id": "CMAN-SAW-PRO725",
+        "department": "tools",
+        "class": "saws",
+        "role": "best",
+        "color": "red",
+        "size": 7.25,
+        "power": "cordless",
+        "battery": "60V MAX",
+        "specs": {
+            "motor": "brushless",
+            "blade_speed": "5200 RPM",
+            "cutting_depth": "2-7/8 inch",
+            "bevel_capacity": "57 degrees"
+        },
+        "seasonality": "no",
+        "vendor": "Acme",
+        "country": "USA",
+        "cost": "$89.99",
+        "MSRP": "$199.99",
+        "MAP": "$179.99",
+        "yearTarget": "25000",
+        "features": ["LED work light", "Electric brake", "Metal blade guard", "Premium carry case"]
+    },
+    {
+        "product_id": "CMAN-SAW-MID725",
+        "department": "tools",
+        "class": "saws",
+        "role": "better",
+        "color": "red",
+        "size": 7.25,
+        "power": "cordless",
+        "battery": "40V MAX",
+        "specs": {
+            "motor": "brushless",
+            "blade_speed": "4800 RPM",
+            "cutting_depth": "2-5/8 inch",
+            "bevel_capacity": "50 degrees"
+        },
+        "seasonality": "no",
+        "vendor": "Acme",
+        "country": "USA",
+        "cost": "$69.99",
+        "MSRP": "$159.99",
+        "MAP": "$149.99",
+        "yearTarget": "35000",
+        "features": ["LED work light", "Electric brake", "Composite blade guard"]
+    },
+    {
+        "product_id": "CMAN-SAW-BASE725",
+        "department": "tools",
+        "class": "saws",
+        "role": "good",
+        "color": "red",
+        "size": 7.25,
+        "power": "cordless",
+        "battery": "20V MAX",
+        "specs": {
+            "motor": "brushless",
+            "blade_speed": "4500 RPM",
+            "cutting_depth": "2-1/2 inch",
+            "bevel_capacity": "45 degrees"
+        },
+        "seasonality": "no",
+        "vendor": "Acme",
+        "country": "USA",
+        "cost": "$55.00",
+        "MSRP": "$129.99",
+        "MAP": "$119.99",
+        "yearTarget": "45000",
+        "features": ["LED work light", "Composite blade guard"]
+    },
+    {
+        "product_id": "CMAN-SAW-ENT725",
+        "department": "tools",
+        "class": "saws",
+        "role": "entry",
+        "color": "red",
+        "size": 7.25,
+        "power": "cordless",
+        "battery": "20V",
+        "specs": {
+            "motor": "brushless",
+            "blade_speed": "4200 RPM",
+            "cutting_depth": "2-3/8 inch",
+            "bevel_capacity": "45 degrees"
+        },
+        "seasonality": "no",
+        "vendor": "Acme",
+        "country": "USA",
+        "cost": "$49.99",
+        "MSRP": "$109.99",
+        "MAP": "$99.99",
+        "yearTarget": "55000",
+        "features": ["Basic work light", "Composite blade guard"]
+    }
+]
