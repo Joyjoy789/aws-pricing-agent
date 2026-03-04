@@ -109,6 +109,28 @@ npm run develop
 npm run -w backend cdk destroy -- --all
 ```
 
+## ❓ 常见问题
+
+### 为什么使用 multi-agent-orchestrator 而不是 Strands Agents SDK？
+
+| 特性 | multi-agent-orchestrator | Strands Agents SDK |
+|------|--------------------------|-------------------|
+| 定位 | 多Agent协调编排 | 通用Agent开发框架 |
+| 核心能力 | Supervisor、Chain、Classifier路由 | Tool调用、多模型支持 |
+| LLM支持 | 主要 Amazon Bedrock | Bedrock/OpenAI/Anthropic/Gemini |
+| 编排模式 | 内置 SupervisorAgent、ChainAgent | 需自行实现 |
+
+本项目选择 multi-agent-orchestrator 是因为它原生支持 Supervisor 和 Chain 编排模式，正好匹配多Agent协作定价的业务场景。
+
+### 后续开发计划
+
+我们计划开发基于 Strands Agents SDK 的版本：
+- [ ] 支持多模型提供商切换（OpenAI、Anthropic、Gemini）
+- [ ] 统一的 Tool 定义接口
+- [ ] 本地开发调试支持
+
+更多问题请参考 [FAQ.md](./FAQ.md)
+
 ## 📄 License
 
 [Apache License 2.0](LICENSE)
